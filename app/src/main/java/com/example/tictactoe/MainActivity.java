@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     List<String> playerTwo;
     int playerTurn;
     int turnCounter;
-    static int maxTurns = 9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
