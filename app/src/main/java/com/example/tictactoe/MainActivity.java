@@ -1,10 +1,9 @@
 package com.example.tictactoe;
 
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Handler;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.TypedValue;
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button button8;
     Button button9;
     TableLayout tableLayout;
-    Button reset;
+    FloatingActionButton reset;
     Boolean won;
     View view;
     List<String> playerOne;
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.layout_combined);
 
 
         playerOne = new ArrayList<String>();
@@ -53,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button7 = findViewById(R.id.button_31);
         button8 = findViewById(R.id.button_32);
         button9 = findViewById(R.id.button_33);
-        reset = findViewById(R.id.button_reset);
+        reset = findViewById(R.id.floating_button);
         playerTurn = 0;
         turnCounter = 1;
         won = false;
@@ -67,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button7.setOnClickListener(this);
         button8.setOnClickListener(this);
         button9.setOnClickListener(this);
+
 
     }
 
@@ -178,8 +178,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button.setEnabled(false);
     }
 
-
-    void disableAndReload(View view) {
+    public void disableAndReload(View view) {
 
         tableLayout = findViewById(R.id.table_layout);
         for (int i = 0; i < tableLayout.getChildCount(); i++) {
@@ -192,10 +191,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void run() {
 
                 startActivity(new Intent(MainActivity.this, MainActivity.class));
-                finish();
             }
         }, 1500);
     }
-
-
 }
