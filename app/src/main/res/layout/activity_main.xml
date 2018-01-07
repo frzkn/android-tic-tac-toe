@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/table_layout"
     android:layout_width="match_parent"
-    android:background="#FFFFFF"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:stretchColumns="*">
 
 
@@ -13,44 +13,42 @@
 
         <Button
             android:id="@+id/button_11"
+            style="@style/ButtonAppearance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
             android:layout_margin="10dp"
-            android:background="#BDBDBD"
             android:paddingBottom="35dp"
             android:paddingTop="35dp"
-            android:textColor="#BDBDBD"
-            android:textSize="30sp"
             tools:text="O" />
 
 
         <Button
             android:id="@+id/button_12"
+            style="@style/ButtonAppearance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
-            android:layout_margin="10dp"
 
-            android:background="#BDBDBD"
+
+            android:layout_margin="10dp"
             android:paddingBottom="35dp"
             android:paddingTop="35dp"
-            android:textColor="#BDBDBD"
-            android:textSize="30sp"
+
             tools:text="O" />
 
         <Button
 
             android:id="@+id/button_13"
+            style="@style/ButtonAppearance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="2"
+
             android:layout_margin="10dp"
-            android:background="#BDBDBD"
             android:paddingBottom="35dp"
+
             android:paddingTop="35dp"
-            android:textColor="#BDBDBD"
-            android:textSize="30sp"
             tools:text="O" />
     </TableRow>
 
@@ -58,42 +56,35 @@
 
         <Button
             android:id="@+id/button_21"
+            style="@style/ButtonAppearance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
 
-            android:background="#BDBDBD"
+
+            android:layout_margin="10dp"
             android:paddingBottom="35dp"
+
             android:paddingTop="35dp"
-            android:textColor="#BDBDBD"
-            android:textSize="30sp"
             tools:text="O" />
 
         <Button
-
             android:id="@+id/button_22"
+            style="@style/ButtonAppearance"
             android:layout_width="wrap_content"
-
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#BDBDBD"
             android:paddingBottom="35dp"
             android:paddingTop="35dp"
-            android:textColor="#BDBDBD"
-            android:textSize="30sp"
             tools:text="O" />
 
         <Button
             android:id="@+id/button_23"
+            style="@style/ButtonAppearance"
             android:layout_width="wrap_content"
-
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#BDBDBD"
             android:paddingBottom="35dp"
             android:paddingTop="35dp"
-            android:textColor="#BDBDBD"
-            android:textSize="30sp"
             tools:text="O" />
     </TableRow>
 
@@ -101,44 +92,35 @@
 
         <Button
             android:id="@+id/button_31"
+            style="@style/ButtonAppearance"
             android:layout_width="wrap_content"
-
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#BDBDBD"
             android:paddingBottom="35dp"
             android:paddingTop="35dp"
-            android:textColor="#BDBDBD"
-            android:textSize="30sp"
             tools:text="O" />
 
         <Button
             android:id="@+id/button_32"
+            style="@style/ButtonAppearance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-
-            android:background="#BDBDBD"
             android:paddingBottom="35dp"
             android:paddingTop="35dp"
-            android:textColor="#BDBDBD"
-            android:textSize="30sp"
             tools:text="O" />
 
         <Button
             android:id="@+id/button_33"
+            style="@style/ButtonAppearance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#BDBDBD"
             android:paddingBottom="35dp"
             android:paddingTop="35dp"
-            android:textColor="#BDBDBD"
-            android:textSize="30sp"
             tools:text="O" />
 
     </TableRow>
-
 
 
 </TableLayout>

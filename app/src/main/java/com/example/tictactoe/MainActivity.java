@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     void playGame(Button button, String position) {
 
         if (ifPlayerOne()) {
-            button.setBackgroundColor(Color.parseColor("#E91E63"));
+            button.setBackgroundColor(getResources().getColor(R.color.playerOne));
             button.setText("X");
             button.setTextColor(getResources().getColor(android.R.color.white));
             button.setTextSize(TypedValue.COMPLEX_UNIT_SP, 30);
@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             checkWinner(playerOne);
             playerTurn = 1;
         } else if (!ifPlayerOne()) {
-            button.setBackgroundColor(Color.parseColor("#F8BBD0"));
+            button.setBackgroundColor(getResources().getColor(R.color.playerTwo));
             button.setTextSize(TypedValue.COMPLEX_UNIT_SP, 30);
             button.setTextColor(getResources().getColor(android.R.color.black));
             button.setText("O");

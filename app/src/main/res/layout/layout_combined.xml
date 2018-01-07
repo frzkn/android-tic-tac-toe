@@ -30,5 +30,6 @@
         app:rippleColor="@android:color/white"
         android:src="@drawable/ic_reload"
         android:tint="@android:color/white"
-        app:fabSize="normal" />
+        app:fabSize="normal"
+        />
 </RelativeLayout>
